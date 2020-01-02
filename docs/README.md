@@ -1,2 +1,2 @@
 # Cooperforever
-This is my blog
+Init Blog
