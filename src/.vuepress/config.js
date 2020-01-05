@@ -2,6 +2,8 @@ const siderBarConfig = require('../../utils/configHelper.js')
 
 module.exports = {
   title: "Cooperforever",
+  dest: './docs/',  // 设置输出目录
+  base: '/MyBlog/',
   plugins: [
     [
       '@vuepress/last-updated',
