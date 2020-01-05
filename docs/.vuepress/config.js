@@ -1,4 +1,5 @@
 const siderBarConfig = require('../../utils/configHelper.js')
+
 module.exports = {
   title: "Cooperforever",
   plugins: [
@@ -26,34 +27,33 @@ module.exports = {
       },
       { text: 'React', link: '/React' },
       { text: 'Js', link: '/Js' },
-      { text: 'Game', link: '/Js' },
-      { text: 'Cesium', link: '/Js' },
-      { text: 'Github', link: 'https://google.com', target: '_blank' },
-      { text: 'External', link: 'https://google.com', target: '_self' },
+      { text: 'Game', link: '/Game' },
+      { text: 'Cesium', link: '/Cesium' },
+      { text: 'Github', link: 'https://github.com/cooperforever', target: '_blank' },
     ],
-    sidebar:
-    {
-      "/vue/source/": [
-        {
-          title: '源码分析',   // 必要的
-          path: '/vue/source/',      // 可选的, 应该是一个绝对路径
-          collapsable: false, // 可选的, 默认值是 true,
-          sidebarDepth: 1,    // 可选的, 默认值是 1
-          children: [
-            '/vue/source/响应式原理',
-            '/vue/source/keep-alive'
-          ]
-        }
-      ],
-      "/vue/components/": [{
-        title: '组件化',   // 必要的
-        path: '/vue/components/',      // 可选的, 应该是一个绝对路径
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1,    // 可选的, 默认值是 1
-        children: [
-          '/vue/compoents/组件化'
-        ]
-      }]
-    }
+    sidebar: siderBarConfig()
+    // {
+    //   "/vue/source/": [
+    //     {
+    //       title: '源码分析',   // 必要的
+    //       path: '/vue/source/',      // 可选的, 应该是一个绝对路径
+    //       collapsable: false, // 可选的, 默认值是 true,
+    //       sidebarDepth: 1,    // 可选的, 默认值是 1
+    //       children: [
+    //         '/vue/source/响应式原理',
+    //         '/vue/source/keep-alive'
+    //       ]
+    //     }
+    //   ],
+    //   "/vue/components/": [{
+    //     title: '组件化',   // 必要的
+    //     path: '/vue/components/',      // 可选的, 应该是一个绝对路径
+    //     collapsable: false, // 可选的, 默认值是 true,
+    //     sidebarDepth: 1,    // 可选的, 默认值是 1
+    //     children: [
+    //       '/vue/compoents/组件化'
+    //     ]
+    //   }]
+    // }
   }
 }

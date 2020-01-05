@@ -1,11 +1,15 @@
 const fs = require('fs')
+const path1 = require('path')
 
 const getfileNames = function (title = "前言", path, collapsable = false, sidebarDepth = 1) {
-  console.log(path);
-
-  const readDir = fs.readdirSync(path).map((value) => {
-    path + value.slice(0, -3)
-  })
+  let docpath = `./docs/${path}`
+  const readDir = fs.readdirSync(docpath).reduce((accumulator, value) => {
+    if (value.toLocaleLowerCase() === "readme.md") {
+    } else {
+      accumulator.push(path + value.slice(0, -3))
+    }
+    return accumulator;
+  }, [])
   console.table(readDir)
   return {
     title: title,
