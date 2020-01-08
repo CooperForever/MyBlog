@@ -28,7 +28,11 @@ module.exports = {
         ]
       },
       { text: 'React', link: '/React' },
-      { text: 'Js', link: '/Js' },
+      {
+        text: 'Js', link: '/Js', items: [
+          { text: 'ES6', link: '/Js/ES6/' }
+        ]
+      },
       { text: 'Game', link: '/Game' },
       { text: 'Cesium', link: '/Cesium' },
       { text: 'Github', link: 'https://github.com/cooperforever', target: '_blank' },
