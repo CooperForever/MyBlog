@@ -2,7 +2,7 @@ const siderBarConfig = require('../../utils/configHelper.js')
 
 module.exports = {
   title: "Cooperforever",
-  dest: './docs/',  // 设置输出目录
+  dest: './docs/', // 设置输出目录
   base: '/MyBlog/',
   plugins: [
     [
@@ -20,22 +20,55 @@ module.exports = {
   themeConfig: {
     lastUpdated: '上次更新',
     logo: '/assets/img/logo.png',
-    nav: [
-      {
-        text: 'Vue', link: '/vue', items: [
-          { text: '源码分析', link: '/vue/source/' },
-          { text: '组件', link: '/vue/components/' }
+    nav: [{
+        text: 'Vue',
+        link: '/vue',
+        items: [{
+            text: '源码分析',
+            link: '/vue/source/'
+          },
+          {
+            text: '组件',
+            link: '/vue/components/'
+          }
         ]
       },
-      { text: 'React', link: '/React' },
       {
-        text: 'Js', link: '/Js', items: [
-          { text: 'ES6', link: '/Js/ES6/' }
-        ]
+        text: 'React',
+        link: '/React'
       },
-      { text: 'Game', link: '/Game' },
-      { text: 'Cesium', link: '/Cesium' },
-      { text: 'Github', link: 'https://github.com/cooperforever', target: '_blank' },
+      {
+        text: 'Js',
+        link: '/Js',
+        items: [{
+          text: 'ES6',
+          link: '/Js/ES6/'
+        }]
+      },
+      {
+        text: 'Game',
+        link: '/Game'
+      },
+      {
+        text: 'Cesium',
+        link: '/Cesium'
+      },
+      {
+        text: 'Algorithms',
+        link: '/Algorithms',
+        items: [{
+          text: '基础',
+          link: '/Algorithms/base/'
+        }, {
+          text: '排序',
+          link: '/Algorithms/Sort/'
+        }]
+      },
+      {
+        text: 'Github',
+        link: 'https://github.com/cooperforever',
+        target: '_blank'
+      },
     ],
     sidebar: siderBarConfig()
     // {
