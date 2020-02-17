@@ -43,6 +43,9 @@ module.exports = {
         items: [{
           text: 'ES6',
           link: '/Js/ES6/'
+        }, {
+          text: 'Canvas',
+          link: '/Js/Canvas/'
         }]
       },
       {
