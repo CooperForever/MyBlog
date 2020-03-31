@@ -36,3 +36,16 @@ context.arc(
 
 在绘制弧线时，如果使用了 beginPath() closePath(), 弧线收尾会以直线自动连接，
 beginPath()与 closePath() 无需成对出现，按情况选择是否需要 closePath()。
+## 绘制矩形
+```js
+context.rect(x,y,width,height);
+//填充颜色的矩形
+context.fillRect(x,y,width,height)
+//绘制矩形的边框
+context.strokeRect(x,y,width,height)
+```
+
+## lineCap
+```js
+ctx.lineCap = "round"/"butt"/"square"
+```

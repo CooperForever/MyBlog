@@ -7,6 +7,7 @@ var siderBarConfig = function (params) {
     "/vue/source/": [getFileNames("源码分析", "/vue/source/", false, 1)],
     "/vue/components/": [getFileNames("组件化", "/vue/components/", false, 1)],
     "/Js/ES6/": [getFileNames("ES6", "/Js/ES6/", false, 1)],
+    "/Js/Webpack/": [getFileNames("Webpack", "/Js/Webpack/", false, 1)],
     "/Js/Canvas/": [getFileNames("Canvas", "/Js/Canvas/", false, 1)],
     "/Algorithms/base/": [getFileNames("基础", "/Algorithms/base/", false, 1)],
   }
