@@ -1,15 +1,16 @@
 {
-  "name": "vuepress",
+  "name": "myblog",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vuepress build src --dest ./docs/",
-    "dev": "vuepress dev src"
+    "docs:dev":"vuepress dev docs",
+    "docs:build":"vuepress build docs"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "moment": "^2.24.0"
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^1.8.2"
   }
 }
